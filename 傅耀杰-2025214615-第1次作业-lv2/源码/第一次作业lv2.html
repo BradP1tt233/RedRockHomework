@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../icon/font_5059315_86zl0tijo2g/iconfont.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(231, 231, 231);
+        }
+        .container{
+            height: 660px;
+            width:435px;
+            background-color: white;
+        }
+        .icon-container{
+            display: flex;
+            width: 600px;
+        }
+        .icon-weixin {
+  width: 2em;
+  height: 2em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  margin: 10px;
+        }
+        .icon-QQ {
+  width: 2em;
+  height: 2em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  margin: 10px;
+        }
+        .icon-weibo {
+  width: 2em;
+  height: 2em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  margin: 10px;
+        }
+        .icon-wangyi {
+  width: 2em;
+  height: 2em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  margin: 10px;
+        }
+        .icon-esc{
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  margin: 10px;
+        }
+        .icon-music{
+  width: 80px;
+  height: 80px;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  margin: 10px;
+        }
+        .top{
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo{
+            justify-content: center;
+            text-align: center;
+            height: 100px;
+            margin-bottom: 30px;
+        }
+        .input{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+        .input a:hover{
+            transform: translateY(-2px);
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+        }
+        #a1{
+            width: 300px;
+            height: 40px;
+            border-color: rgb(200, 200, 200);
+            border-radius: 5px;
+            border-style: solid;
+          
+        }
+        #a2{
+            width: 300px;
+            height: 40px;
+            border-color: rgb(200, 200, 200);
+            border-radius: 5px;
+            border-style: solid;
+        }
+        .lianjie{
+            display: flex;
+            justify-content: center;
+        }
+        .lianjie a{
+            margin: 5px 10px;
+            text-decoration: none;
+            color: rgb(32, 136, 255);
+        }
+        .lianjie p{
+            margin-top: 5px;
+            margin-right: 50px;
+        }
+        .login{
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .login button{
+            width: 280px;
+            height: 48px;
+            background-color: rgb(247, 64, 64);
+            text-align: center;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 8px;
+        }
+        .login p{
+            color: white;
+            font-size: large
+        }
+        .login a{
+            color: black;
+        }
+        .login a:hover{
+            transform: translateY(-2px);
+        }
+        .icon-container{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .bottom{
+            display: flex;
+            justify-content: center
+        }
+        .icon-container svg{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .bottom a{
+            text-decoration: none;
+            color: rgb(71, 96, 186);
+            margin: 7px;
+        }
+        .bottom p{
+            color: #ccc;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="top">
+        <img src="../图片/收款码.jpg" alt="qrcode" width="60px" height="60px">
+        <svg class="icon-esc">
+        <use xlink:href="#icon-cancel-1-copy"></use>
+        </svg>
+    </div>
+    <div class="logo">
+       <svg class="icon-music">
+        <use xlink:href="#icon-wangyiyunyinle1"></use>
+        </svg>
+    </div>
+    <div class="input">
+        <input type="text" placeholder="请输入手机号" id="a1">
+        <input type="password" placeholder="请输入密码" id="a2">
+        <div class="lianjie">
+             <input type="checkbox" class="check"><p>自动登录</p>
+        <a href="#">忘记密码</a>
+        <a href="#">验证码登录</a>
+        </div>
+    </div>
+    <div class="login">
+        <button><p>登录</p></button>
+        <a href="#">注册</a>
+        <div class="icon-container">
+  <svg class="icon-weixin" >
+  <use xlink:href="#icon-weixin"></use>
+  </svg>
+    <svg class="icon-QQ">
+        <use xlink:href="#icon-QQ"></use>
+    </svg>
+     <svg class="icon-weibo">
+        <use xlink:href="#icon-weibo"></use>
+    </svg>
+     <svg class="icon-wangyi">
+        <use xlink:href="#icon-wangyi"></use>
+    </svg>
+    </div>
+    <div class="bottom">
+        <input type="checkbox"><p>同意</p>
+        <a href="#">《服务条款》</a>
+        <a href="#">《隐私政策》</a>
+        <a href="#">《儿童隐私政策》</a>
+    </div>
+    </div>
+</div>
+</body>
+</html>

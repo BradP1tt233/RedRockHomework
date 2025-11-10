@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lv2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bigbox {
+            width: 600px;
+            height: 320px;
+            background-color: #b3d1ff;
+          
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px 0;
+        }
+        .roundbox {
+            width: 300px;
+            height: 100px;
+            background-color: #ec0057;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+            line-height: 100px;
+        }
+        .bottom {
+            width: 100%;
+            display: flex;
+            justify-content: space-around; 
+            margin-top: 10px;
+        }
+        .hufa {
+            width: 220px;
+            height: 80px;
+            background-color: #d44a96;
+            border-radius: 10px; 
+            text-align: center;
+            line-height: 80px; 
+        }
+    </style>
+</head>
+<body>
+    <!-- 大容器 -->
+    <div class="bigbox">
+        <!-- h2标题 -->
+        <h2>我是个h2</h2>
+        
+        <!-- 中间圆角框 -->
+        <div class="roundbox">垂直居中,圆角</div>
+        
+        <!-- 说明文字 -->
+        <p>上面的圆角框大小是300px * 100px而且我跟上下都相距20px</p>
+        
+        <!-- 底部区域 -->
+        <div class="bottom">
+            <div class="hufa">220px*80px的左护法</div>
+            <p>大框600px * 320px</p>
+            <div class="hufa">220px*80px的右护法</div>
+        </div>
+    </div>
+</body>
+</html>

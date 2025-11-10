@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度一下</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .top{
+            height: 60px;
+            margin-top: 15px;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            float: right;
+        }
+        ul li:hover {
+            transform: translateY(-2px);
+        }
+        .chanpin{
+            background-color: rgb(52, 106, 234);
+        }
+        a{
+            text-decoration: none;
+            font-family: "Microsoft YaHei";
+            margin-left: 24px;
+            margin-top: 25px;
+            color: black;
+        }
+        .middle{
+          
+           height: 420px;
+           width: 1400px;
+           margin: 40px auto;
+           display: flex;
+           align-items: center;
+           flex-direction: column;
+        }
+        .logo{
+           width: 270px;
+           height: 129px;
+        }
+        .searcher{
+            width: 1400px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            width: 800px;
+            height: 40px;
+            border-style: solid;
+            border-color: rgb(148, 148, 148);
+        }  
+        button{
+            height: 43px;
+            width: 100px;
+            background-color: rgb(34, 85, 235);
+            font-size: large;
+            border: none;
+            color: white;           
+        }
+        input::placeholder{
+            font-size: large
+        }
+        a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+        .bottom{
+            width: 600px;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .qrcode{
+            width: 300px;
+            height: 200px;
+           
+            text-align: center;
+        }
+        .qrcode p{
+            font-size: large;
+        }
+        .a{
+            color: rgb(170, 170, 170);
+        }
+        .xinxi{
+            height: 100px;
+            width: 500px;
+            margin-top: 40px;
+        
+        }
+        .xinxi{
+            text-align: center;
+        }
+        .xinxi a{
+            color: rgb(141, 141, 141);
+            margin: 0 15px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+   <div class="top">
+<ul class="nav">
+    <li><a href="#" class="chanpin">更多产品</a></li>
+    <li><a href="#">设置</a></li>
+    <li><a href="#">登录</a></li>
+    <li><a href="#">学术</a></li>
+    <li><a href="#">贴吧</a></li>
+    <li><a href="#">视频</a></li>
+    <li><a href="#">地图</a></li>
+    <li><a href="#">hao123</a></li>
+    <li><a href="#">新闻</a></li>
+</ul>
+   </div>
+<div class="middle">
+<div class="logo">
+    <img src="图片\百度logo.JPG" alt="logo" width="300px" height="180px">
+</div>
+<div class="searcher">
+    <input type="text" placeholder="请输入搜索内容">
+    <button>
+        百度一下
+    </button>
+</div>
+    </div>
+    <div class="bottom">
+        <div class="qrcode">
+            <img src="图片\收款码.jpg" alt="qrcode" width="150px" height="150px">
+            <p>下载百度APP</p>
+            <p class="a">有事搜一搜，没事看一看</p>
+        </div>
+        <div class="xinxi">
+            <a href="#">把百度作为首页</a>
+            <a href="#">关于百度</a>
+            <a href="#">About Baidu</a>
+            <a href="#">百度推广</a>
+        </div>
+    </div>
+    
+</body>
+</html>
