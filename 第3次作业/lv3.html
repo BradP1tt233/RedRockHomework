@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lv3</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+       }
+        body{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            
+        }
+        div{
+            border-radius: 10px;
+        }
+        .box1{
+            width: 320px;
+            height: 500px;
+            background-color: rgb(61, 147, 234);
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+        .box2{
+            width: 320px;
+            height: 300px;
+            background-color: aquamarine;
+            flex-grow: 1;
+        }
+        .box3{
+            width: 320px;
+            height: 100px;
+            background-color: orange;
+            align-self: flex-start;
+            flex-shrink: 1;
+        }
+        .box4{
+            width: 320px;
+            height: 600px;
+            background-color: rgb(214, 49, 49);
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+  一号盒子
+  <p>我始终保持原大小，不缩放。</p>
+</div>
+<div class="box2">
+  二号盒子
+  <p>浏览器界面变宽时，我占满其他元素剩下的所有空间</p>
+</div>
+<div class="box3">
+  三号盒子
+  <p>我和四号盒子的顶部对齐</p>
+</div>
+<div class="box4">
+  四号盒子
+  <p>浏览器界面变窄时，我缩窄的速度要比二、三号盒子快</p>
+</div>
+
+
+
+</body>
+</html>
