@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let person={name:"Mac",age:18,gender:'male'};
+    function copy(object){
+      let newobject={};
+      for(let i in object){
+        newobject[i]=object[i];
+      }
+      return newobject;
+    }
+    let person1=copy(person);
+    let person2=copy(person);
+    let person3=copy(person);
+    console.table(person1,person2,person3);
+  </script>
+</body>
+</html>

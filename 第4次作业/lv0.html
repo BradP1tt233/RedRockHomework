@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let sudent1=new Object();  //Object函数创建
+    let student2={             //字面量创建
+      name:'Bob',
+      age:18,
+      gender:male
+    };
+    function add(){            //自定义函数创建
+      this.name=Sam;
+      this.age=18;
+    }
+    let student3=new add();
+  </script>
+</body>
+</html>
